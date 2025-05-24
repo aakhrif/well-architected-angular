@@ -23,6 +23,7 @@ export class ButtonComponent {
   @Input() icon = '';
   @Input() iconPosition: 'left' | 'right' = 'left';
   @Input() ariaLabel = '';
+  @Input() label = '';
   @Output() onClick = new EventEmitter<MouseEvent>();
 
   get color(): string {

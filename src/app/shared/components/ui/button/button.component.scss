@@ -22,12 +22,12 @@ button[mat-button] {
 
   &.secondary {
     background: #03dac6;
-    color: #000000;
+    color: #eeeaea;
   }
 
   &.text {
     background: transparent;
-    color: #6200ee;
+    color: #f4f3f5;
     
     &:hover:not(:disabled) {
       background: rgba(98, 0, 238, 0.1);
