@@ -1,0 +1,19 @@
+<button
+  mat-button
+  [class]="buttonClass"
+  [disabled]="disabled"
+  [type]="type"
+  (click)="onClick.emit($event)"
+>
+  @if (icon && iconPosition === 'left') {
+    <mat-icon class="icon-left">{{ icon }}</mat-icon>
+  }
+  
+  <span class="button-label">
+    <ng-content></ng-content>
+  </span>
+  
+  @if (icon && iconPosition === 'right') {
+    <mat-icon class="icon-right">{{ icon }}</mat-icon>
+  }
+</button>

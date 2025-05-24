@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+// styles.scss
+@use '@angular/material' as mat;
+
+// 1. Define theme
+$theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: mat.$azure-palette,
+    tertiary: mat.$blue-palette
+  )
+));
+
+// 2. WRAP theme application in root selector
+:root {
+  @include mat.all-component-themes($theme);
+}
+
+// 3. Component-specific theming MUST be nested
+.my-custom-component {
+  @include mat.button-theme($theme);
+  @include mat.card-theme($theme);
+}
