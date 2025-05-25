@@ -1,0 +1,22 @@
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; /* Vertikaler Abstand zwischen Buttons */
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+
+  /* Optional: Responsive Anpassungen */
+  @media (max-width: 600px) {
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
+
+.button-group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+}

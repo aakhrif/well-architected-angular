@@ -1,0 +1,24 @@
+<nav class="navbar">
+  <!-- Start-Link nur aktiv auf exakt "/" -->
+  <a mat-button 
+     routerLink="/" 
+     routerLinkActive="active-link"
+     [routerLinkActiveOptions]="{ exact: true }">
+    Start
+  </a>
+  
+  <!-- Buttons-Link -->
+  <a mat-button 
+     routerLink="/buttons" 
+     routerLinkActive="active-link">
+    Buttons
+  </a>
+  
+  <!-- Forms-Link -->
+  <a mat-button 
+     routerLink="/forms" 
+     routerLinkActive="active-link">
+    Forms
+  </a>
+</nav>
+<router-outlet></router-outlet>

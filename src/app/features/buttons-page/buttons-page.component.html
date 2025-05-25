@@ -1,18 +1,27 @@
-<!-- Primary button -->
-<div class="centered-container">
-  <app-button>Save</app-button>
-</div>
+<div class="button-container">
+  <!-- Primary Button -->
+  <div class="button-group">
+    <app-button>Save</app-button>
+  </div>
 
-<!-- Secondary button with icon -->
-<div class="centered-container">
-  <app-button variant="secondary" icon="delete" iconPosition="right" (onClick)="deleteItem()">
-    Delete
-  </app-button>
-</div>
+  <!-- Secondary Button -->
+  <div class="button-group">
+    <app-button 
+      variant="secondary" 
+      icon="delete" 
+      iconPosition="right" 
+      (onClick)="deleteItem()">
+      Delete
+    </app-button>
+  </div>
 
-<!-- Small text button -->
-<div class="centered-container">
-  <app-button variant="text" size="small" icon="close">
-    Cancel
-  </app-button>
+  <!-- Small Text Button -->
+  <div class="button-group">
+    <app-button 
+      variant="text" 
+      size="small" 
+      icon="close">
+      Cancel
+    </app-button>
+  </div>
 </div>

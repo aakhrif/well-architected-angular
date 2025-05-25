@@ -1,1 +1,15 @@
-<p>bad-form works!</p>
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <label>Name:</label>
+  <input type="text" formControlName="name" />
+
+  <label>Email:</label>
+  <input type="text" formControlName="email" />
+
+  <label>Age:</label>
+  <input type="text" formControlName="age" />
+
+  <label>Password:</label>
+  <input type="text" formControlName="password" />
+
+  <button type="submit">Send</button>
+</form>

@@ -1,13 +1,12 @@
 import { Routes } from '@angular/router';
-// import { ButtonsPageComponent } from './features/buttons-page/buttons-page.component';
 import { FormsPageComponent } from './features/forms-page/forms-page.component';
-import { AppComponent } from './app.component';
 import { ErrorPageComponent } from './features/error-page/error-page.component';
+import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
 
 export const routes: Routes = [
     {
         path: '',
-        component: AppComponent,
+        component: MainLayoutComponent,
         children: [
             {
                 path: 'buttons',
